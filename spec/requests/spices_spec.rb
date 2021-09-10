@@ -28,7 +28,7 @@ RSpec.describe "Spices", type: :request do
   
     it 'returns an array of all spices' do
       get '/spices'
-
+      
       expect(response.body).to include_json([
         {
           id: a_kind_of(Integer),
